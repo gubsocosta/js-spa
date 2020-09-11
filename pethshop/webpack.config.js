@@ -18,5 +18,13 @@ module.exports = {
             template: './src/clientes.html',
             filename: 'index.htm'
         })
-    ]
+    ],
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
+            }
+        ],
+    }
 };
